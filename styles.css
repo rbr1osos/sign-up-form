@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin:0;
+    padding:0;
+}
+/* 
+.main-container{
+    display:flex;
+    background-color:black;
+    width:100%;
+    height:100vh;
+}
+.left-container{
+    width:30%;
+    height:100vh;
+    background-color: rgb(51, 51, 51);
+} */
+
+.right-container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    background-color: white;
+    padding:32px;
+}
+
+h1{
+    font-size:24px;
+    padding:0;
+    margin:0;
+}
+.textbox_container{
+    background-color: grey;
+    padding:16px;
+}
+.textbox_container_field{
+    display:flex;
+justify-content: space-evenly;}
+.left-textbox{
+    display:flex;
+    flex-direction: column;
+}
+
+.right-textbox{
+    display:flex;
+    flex-direction: column;
+}
