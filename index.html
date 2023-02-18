@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel='stylesheet' href='/styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class='main-container'>
@@ -18,48 +21,49 @@
            <h1>Sign up <i>now</i> to get started.</h1>
 
            <br />
-           <h1> you know you want to</h1>
+           <h1><i>you know you want to</i></h1>
         </div>
 
         <div class='textbox_container'>
 
-                <h2>Let's do this!</h2>
-        <div class='textbox_container_field'>
+            <h2>Account Details</h2>
+            <div class='textbox_container_field'>
 
-            <div class='textbox'>
-                <label for='first'>First Name</label>
-                <input type='text' id='first_name' name='first_name'>
+                <div class='textbox'>
+                    <label for='first'>First Name</label>
+                    <input type='text' id='first_name' name='first_name'>
+                </div>
+
+                <div class='textbox'>
+                    <label for='last'>Last Name</label>
+                    <input type='text' id='last_name' name='last_name'>
+                </div>   
+
+                <div class='textbox'>
+                    <label for='email'>Email</label>
+                    <input type='email' id='email' name='email'>
+                </div>
+
+
+                <div class='textbox'>
+                    <label for='number'>Phone Number</label>
+                    <input type='tel' id='tel' name='phone-number'>
+                </div>
+
+
+                <div class='textbox'>
+                    <label for='pwd'>Password</label>
+                    <input type='password' id='pwd' name='password'>
+                </div>
+                <div class='textbox'>
+                    <label for='pwd'>Confirm password</label>
+                    <input type='password' id='password' name='confirm-password'>
+                </div>
+
             </div>
-
-            <div class='textbox'>
-                <label for='last'>Last Name</label>
-                <input type='text' id='last_name' name='last_name'>
-            </div>   
-
-            <div class='textbox'>
-                <label for='email'>Email</label>
-                <input type='email' id='email' name='email'>
-            </div>
-
-
-            <div class='textbox'>
-                <label for='number'>Phone Number</label>
-                <input type='tel' id='tel' name='phone-number'>
-            </div>
-
-
-            <div class='textbox'>
-                <label for='pwd'>Password</label>
-                <input type='password' id='pwd' name='password'>
-            </div>
-            <div class='textbox'>
-                <label for='pwd'>Confirm password</label>
-                <input type='password' id='password' name='confirm-password'>
-            </div>
-
+    
         </div>
-        
-            </div>
+
         <button class='create_button'>Create Account</button>
         <div class='account'>
             Already have an account?

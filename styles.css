@@ -1,6 +1,11 @@
+:root{
+    --background-color: #1c1c1c;
+    --accent-color:#C43E3E;
+    --outside-text:rgb(245, 245, 245);
+
+}
 *{
     box-sizing: border-box;
-    color:#2D2424;
 }
 body, html{
     margin:0;
@@ -11,6 +16,7 @@ body, html{
 body{
     height:100vh;
     width:100vw;
+    font-family: 'inter',sans-serif;
 }
 .main-container{
     display:flex;
@@ -19,24 +25,22 @@ body{
 
 }
 .left-container{
-    background-image: url(images/nathan-dumlao-Ic8RmXGyfNc-unsplash.jpg);
+    background-image: url(images/miguel-davis-V6K83zGHkUE-unsplash.jpg);
     background-size:cover;
     background-position: center;
     width:40%;
 }
 .right-container{
     display:flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
-    width:60%;
+    background-color: #1c1c1c;
+    align-items:center;
 }
 
 /* Right Content */
-
 .header{
-    width:65%;
+    width:80%;
     margin:32px;
 }
 h1,h2{
@@ -45,7 +49,13 @@ h1,h2{
 h1{
     font-size: 1.25rem;
     font-weight:700;
+    color:var(--outside-text);
 }
+
+i{
+    color:var(--accent-color);
+}
+
 h2{
     font-size: 1.25rem;
     margin-bottom:16px;
@@ -53,12 +63,14 @@ h2{
 .textbox_container{ /* container for items -- including 'lets do this' */
     display:flex;
     flex-direction: column;
-    align-items: center;
     background-color: rgb(243, 243, 243);
-    padding:24px 32px;
-    margin-top:16px;
-    width:100%;
+    border-radius: 20px;
+    padding:3%;
+    width:60%;
+    align-items:center;
 }
+
+
 .textbox_container_field{ /* creates grid for text form */
     width:600px;
     display:grid;
@@ -71,11 +83,13 @@ h2{
 .textbox{ /* makes the labels be above txt box */
     display:flex;
     font-size: 12px;
+    font-weight: 700;
+    color:rgb(134, 134, 134);
     flex-direction: column;
 }
 
 .create_button{ /* button */
-    background-color: #2D2424;
+    background-color: var(--accent-color);
     color:white;
     font-weight:600;
     font-size: 16px;
@@ -87,50 +101,7 @@ h2{
 }
 
 .account{ /* account log in */
+    color:var(--outside-text);
     margin-left:32px;
 }
 /*
-
-
-.left-container{
-    flex:1;
-    width:40%;
-    height:100vh;
-    background-image: url(/images/jocelyn-morales-JJeb7OHQ7a8-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.right-container{
-    flex:2;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width:100%;
-    background-color: white;
-}
-
-h1{
-    font-size:20px;
-    padding:0;
-    margin:0;
-}
-.textbox_container{
-    background-color: grey;
-    padding:32px;
-}
-.textbox_container_field{
-    display:flex;
-    gap:32px;
-}
-
-.left-textbox{
-    display:flex;
-    flex-direction: column;
-}
-
-.right-textbox{
-    display:flex;
-    flex-direction: column;
-} */
