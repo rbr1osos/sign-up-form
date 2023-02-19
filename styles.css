@@ -29,25 +29,43 @@ body{
     background-size:cover;
     background-position: center;
     width:40%;
+    position:relative;
 }
+
+.overlay-logo{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: #2b2a2a;
+    opacity: 80%;
+    bottom:70%;
+}
+
+h1.company-name{
+    font-size: 48px;
+    color: var(--outside-text)
+}
+/* Right Content */
+
 .right-container{
     display:flex;
     justify-content: center;
     flex-direction: column;
     background-color: #1c1c1c;
-    align-items:center;
 }
 
-/* Right Content */
 .header{
-    width:80%;
-    margin:32px;
+    width:75%;
+    padding-left:8%;
+    margin-bottom: 35px;
 }
 h1,h2{
     margin:0;
 }
 h1{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight:700;
     color:var(--outside-text);
 }
@@ -60,14 +78,13 @@ h2{
     font-size: 1.25rem;
     margin-bottom:16px;
 }
+
 .textbox_container{ /* container for items -- including 'lets do this' */
     display:flex;
     flex-direction: column;
     background-color: rgb(243, 243, 243);
-    border-radius: 20px;
-    padding:3%;
-    width:60%;
-    align-items:center;
+    padding:2%;
+    padding-left:8%;
 }
 
 
@@ -87,7 +104,9 @@ h2{
     color:rgb(134, 134, 134);
     flex-direction: column;
 }
-
+.bottom-info{
+    padding-left:8%;
+}
 .create_button{ /* button */
     background-color: var(--accent-color);
     color:white;
@@ -95,13 +114,14 @@ h2{
     font-size: 16px;
     padding:10px 32px;
     border-radius: 8px;
-    margin:32px;
+    margin:16px 0;
     width:200px;
     border-style: none;
 }
 
+
+
 .account{ /* account log in */
     color:var(--outside-text);
-    margin-left:32px;
 }
 /*
